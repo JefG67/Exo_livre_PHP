@@ -27,6 +27,7 @@ class Auteur {
     {
         return $this->nom . " " . $this->prenom;
     
+        
 }
 }
 
