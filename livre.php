@@ -15,6 +15,8 @@ class Livre {
         $this->anneeParution = new DateTime ($anneeParution);
         $this->prix = $prix;
         $this->auteur = $auteur;
+        $this->auteur->addLivre($this);
+        
     }
 
     public function getTitre() {
@@ -48,13 +50,13 @@ class Livre {
     public function getAuteur() {
         return $this->auteur;
     }
-    public function setAuteur($auteur){
+    public function setAuteur($auteur) {
         $this->auteur = $auteur;
     }
 
     public function __toString()
     {
-        return $this->titre . " " . $this->prix . " " . $this->anneeParution->format("Y") . " " . $this->nbPages;
+        return $this->titre . " " .$this->anneeParution->format("Y") . " : " .$this->nbPages . " pages " . $this->prix . " €";
 }
 
 }
