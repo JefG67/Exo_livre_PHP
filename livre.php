@@ -2,13 +2,14 @@
 
 
 class Livre {
+    //Attribut de ma classe
     private string $titre;
     private int $nbPages;
     private DateTime $anneeParution;
     private float $prix;
     private Auteur $auteur;
 
-
+    //Constructeur
     public function __construct(string $titre, int $nbPages, string $anneeParution, float $prix, Auteur $auteur) {
         $this->titre = $titre;
         $this->nbPages = $nbPages;
@@ -19,6 +20,7 @@ class Livre {
         
     }
 
+    //setter and getter
     public function getTitre() {
         return $this->titre;
     }
@@ -54,6 +56,7 @@ class Livre {
         $this->auteur = $auteur;
     }
 
+    //Methode magique __toString
     public function __toString()
     {
         return $this->titre . " " .$this->anneeParution->format("Y") . " : " .$this->nbPages . " pages " . $this->prix . " €";
