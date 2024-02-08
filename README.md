@@ -1,7 +1,7 @@
 <htlm> 
 Exercice POO : Livre.PHP
 
-II. Livres
+<h3>II. Livres</h3>
 Vous êtes chargé(e) de créer un projet orienté objet permettant de gérer des livres et leurs auteurs respectifs.<br>
 
 -Les livres sont caractérisés par un titre, un nombre de pages, une année de parution, un prix et un auteur.<br>
